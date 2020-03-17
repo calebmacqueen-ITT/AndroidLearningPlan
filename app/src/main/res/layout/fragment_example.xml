@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentExample">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTopRibbon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvLikeThis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/likeThis"
+            android:textSize="@dimen/sp25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rgArticleLikeRadioButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@+id/tvLikeThis">
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbYes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/yes"
+                 />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbNo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvLikeSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/likeSong"
+            android:textSize="@dimen/sp25"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLikeThis" />
+
+        <ImageView
+            android:id="@+id/ivStar1"
+            android:layout_width="@dimen/sp25"
+            android:layout_height="@dimen/sp25"
+            android:src="@drawable/star_empty"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toEndOf="@+id/tvLikeSong"
+            app:layout_constraintTop_toBottomOf="@+id/tvLikeThis" />
+
+        <ImageView
+            android:id="@+id/ivStar2"
+            android:layout_width="@dimen/sp25"
+            android:layout_height="@dimen/sp25"
+            android:src="@drawable/star_empty"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toEndOf="@+id/ivStar1"
+            app:layout_constraintTop_toBottomOf="@+id/tvLikeThis"/>
+
+        <ImageView
+            android:id="@+id/ivStar3"
+            android:layout_width="@dimen/sp25"
+            android:layout_height="@dimen/sp25"
+            android:src="@drawable/star_empty"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toEndOf="@+id/ivStar2"
+            app:layout_constraintTop_toBottomOf="@+id/tvLikeThis" />
+
+        <ImageView
+            android:id="@+id/ivStar4"
+            android:layout_width="@dimen/sp25"
+            android:layout_height="@dimen/sp25"
+            android:src="@drawable/star_empty"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toEndOf="@+id/ivStar3"
+            app:layout_constraintTop_toBottomOf="@+id/tvLikeThis" />
+
+        <ImageView
+            android:id="@+id/ivStar5"
+            android:layout_width="@dimen/sp25"
+            android:layout_height="@dimen/sp25"
+            android:src="@drawable/star_empty"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toEndOf="@+id/ivStar4"
+            app:layout_constraintTop_toBottomOf="@+id/tvLikeThis" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContentBlock"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clTopRibbon"
+        app:layout_constraintVertical_bias="0.156">
+
+        <ImageView
+            android:id="@+id/ivAlbumCover"
+            android:layout_width="@dimen/dp125"
+            android:layout_height="@dimen/dp185"
+            android:src="@drawable/oneswhodidntmakeitbackhome"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.895"
+            app:layout_constraintStart_toEndOf="@+id/ivAlbumCover"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.231" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="@dimen/dp250"
+            android:layout_height="@dimen/dp315"
+            android:text="@string/descriptionFill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvTitle"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/ivAlbumCover"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintVertical_bias="0.05" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

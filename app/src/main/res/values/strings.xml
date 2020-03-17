@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidLearningWk1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="likeThis">LIKE THE ARTICLE? </string>
+    <string name="likeArticle">ARTICLE: Like </string>
+    <string name="likeSong">LIKE THE SONG? </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title">The Ones That Didn\'t Make it Back Home</string>
+    <string name="descriptionFill">Bacon ipsum dolor amet cow cupidatat magna leberkas, exercitation landjaeger tongue drumstick tenderloin ex lorem. Id flank boudin tail magna dolore est. Pork velit laboris voluptate anim ball tip, irure magna et ipsum kielbasa beef. Incididunt occaecat esse pork belly, hamburger voluptate andouille ribeye sirloin drumstick. Magna in consequat corned beef leberkas pariatur meatball salami rump. Ad shoulder veniam tri-tip consequat, pork in dolore. Pork chop hamburger aute velit, ut corned beef consectetur non filet mignon pastrami et sed.</string>
+</resources>
